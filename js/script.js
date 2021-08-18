@@ -3,7 +3,9 @@ new Vue({
     data: {
         post: " VueJS APP test",
         editor: "sabah-HM",
-        note: "Excellent! "
+        note: "Excellent! ",
+        image: "https://tilde.com/sites/default/files/inline-images/Tilde%20MT_For%20LSPs.png",
+        reference: '<a href="https://www.eprostam.com"> Prostamian </a>'
     },
     methods: {
         editorNotes: function(){

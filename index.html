@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formation : Revision VueJS 2</title>
     <script src="js/vuejs2.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h1>This is a vueJS TEST APP</h1>
@@ -13,8 +14,10 @@
         <!-- Show main message of the data -->
         <h2>{{ post }}</h2>
         <hr>
+        <img :src="image" alt="Post's image">
         <p> By: {{ editor }}</p>
         <p> Editor's Notes: {{ editorNotes() }}</p>
+        <span v-html="reference"></span>
     </div>
 
     <script src="js/script.js"></script>
