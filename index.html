@@ -13,11 +13,26 @@
     <div id="main-content">
         <!-- Show main message of the data -->
         <h2>{{ post }}</h2>
+        <button class="floating-right default" 
+                v-on:click="increamentReads()"
+                v-on:dblclick="doubleClicked('read')">
+                Mark as Read
+        </button>
+
+        <button class="floating-right" 
+                v-on:click="decreamentReads()"
+                v-on:dblclick="doubleClicked('didn\'t read')">
+                Unmark as Read
+        </button>
         <hr>
         <img :src="image" alt="Post's image">
         <p> By: {{ editor }}</p>
-        <p> Editor's Notes: {{ editorNotes() }}</p>
-        <span v-html="reference"></span>
+        <p> 
+            Editor's Notes: {{ editorNotes() }} 
+            | See more : <span v-html="reference"></span> 
+            | Read {{count_reads}} times!
+        </p>
+        
     </div>
 
     <script src="js/script.js"></script>

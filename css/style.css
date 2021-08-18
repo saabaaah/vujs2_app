@@ -1,3 +1,11 @@
 #main-content img {
     width: 100%;
 }
+
+button.floating-right{
+    float: right;
+}
+button.default{
+    background-color: rgb(160, 207, 235);
+
+}
