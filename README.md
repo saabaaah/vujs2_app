@@ -1,1 +1,2 @@
-# vujs2_app
+# VueJS 2 SIMPLE APP
+

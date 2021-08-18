@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formation : Revision VueJS 2</title>
     <script src="js/vuejs2.js"></script>
-    <script src="js/script.js"></script>
 </head>
 <body>
     <h1>This is a vueJS TEST APP</h1>
-    
+    <div id="main-content">
+        <!-- Show main message of the data -->
+        <h2>{{ post }}</h2>
+        <hr>
+        <p> By : {{ editor }}</p>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
